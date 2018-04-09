@@ -81,12 +81,14 @@ export default {
         box-shadow: 0 0 5px #666
     }
     .add-input{
+        width: 540px;
         position: relative;
         left: 30px;
         outline: none;
         height: 40px;
         font-size: 20px;
-        border: none
+        border: none;
+        border-bottom: 1px solid #eee
     }
 </style>
 

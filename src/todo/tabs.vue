@@ -5,7 +5,7 @@
           <span
            v-for="state in states"
             :key="state"
-             :class="[state,filter === state ? 'active' :'']"
+             :class="[state,filter === state ? 'actived' :'']"
              @click="toggleFilter(state)"
              >{{state}}</span>
       </span>
@@ -48,6 +48,18 @@ export default {
 
 
 <style lang="stylus" scoped>
+.helper{
+    margin-top 10px
+    height 30px
+    &:after{
+        content ""
+        display block 
+        height 0
+        clear both 
+        overflow hidden
+        }
+        zoom 1
+}
     .left{
         float left
     }
@@ -57,8 +69,13 @@ export default {
         span{
             padding 5px 10px
             cursor pointer
+            border radio 3px
             &:hover{
-                background-color #eee}
+                background-color #eee
+            }
+            &.actived{
+                background-color red
+            }
         }
     }
     .clear{

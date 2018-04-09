@@ -28,7 +28,6 @@ export default {
 <style lang="stylus" scoped>
 .todo-item{
     position relative 
-    background-color #eee
     font-size 24px
     border-bottom 1px solid rgba(0,0,0,.06)
     &:hover{
@@ -47,7 +46,7 @@ export default {
     }
     &.completed{
         label{
-            color #d9d9d9
+            color #888
             text-decoration line-through
         }
         }
